@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="assets/images/logofinal.png" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <title>Banco Agricultura</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/frr.css">
+    <link rel="stylesheet" href="assets/css/bis.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <!--
+
+Finance Business TemplateMo
+
+https://templatemo.com/tm-545-finance-business
+
+-->
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <header class="">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html"><img class="logonav"
+                        src="assets/images/llogo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registro.html">Creditos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registro.html">Targetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Acerca de Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registro.html">Registrate | Inicia</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+            <!-- Item -->
+            <div class="services">
+
+                
+                    <div class="wrapper wrapper--w960">
+                        <div class="card card-2">
+
+                            <div class="card-heading"></div>
+                            <div class="card-body">
+                                <h2 class="title">Registro</h2>
+                                <form action="../Controlador/CtrlRegistro.php" method="POST" enctype="multipart/form-data">
+                                    <!-- //NOMBRES -->
+                                    <div class="row row-space">
+                                        <div class="col-md-6">
+                                            <div class="input-group">
+                                                <input class="input--style-2" maxlength="30" type="text" name="nombres" id="nombres"
+                                                    placeholder="Nombres" onkeypress="return solonumeros(event);"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <!-- //APELLIDOS -->
+                                        <div class="col-md-6">
+                                            <div class="input-group">
+                                                <input class="input--style-2 select--no-search" type="text"
+                                                    maxlength="30" placeholder="Apellidos" name="apellidos" id="apelldios"
+                                                    onkeypress="return soloLetras(event);" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //TELEFONO -->
+                                    <div class="row row-space">
+                                        <div class="col-md-6">
+                                            <div class="input-group">
+                                                <input class="input--style-2" maxlength="30" type="text" name="telefono" id="telefono"
+                                                    placeholder="Teléfono"
+                                                    onkeypress="return solonumeros(event);" required>
+                                            </div>
+                                        </div>
+                                        <!-- //DDDDDDDDUUUUUUUIIIIIII -->
+                                        <div class="col-md-6">
+                                            <div class="input-group">
+                                                <input class="input--style-2 select--no-search" type="text"
+                                                    maxlength="30" placeholder="DUI" name="DUI" id="DUI"
+                                                    onkeypress="return soloLetras(event);" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FECHA DE NACIMIENTO -->
+                                    <div class="input-group">
+                                        <input class="input--style-2" type="date" name="fechaNac" id="fechaNac"
+                                            placeholder="Fecha de Nacimiento" onkeypress="return solonumeros(event);"
+                                            required>
+                                    </div>
+                                    <!-- //CORREO -->
+                                    <div class="input-group">
+                                        <input class="input--style-2" type="text" name="correo" id="correo" maxlength="30"
+                                            placeholder="Correo Eletronico" onkeypress="return soloLetras(event);"
+                                            required>
+                                    </div>
+
+                                    <!-- CONTRA -->
+                                    <div class="row row-space">
+                                        <div class="col-md-6">
+                                            <div class="input-group">
+                                                <input class="input--style-2" type="password" name="contra" id="contra"
+                                                    placeholder="Contraseña" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- //SUELDO -->
+                                    <div class="row row-space">
+                                        <div class="col-md-6">
+                                            <div class="input-group">
+                                                <input class="input--style-2" type="text" name="sueldo" id="sueldo"
+                                                    placeholder="Sueldo" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <!-- //DEPARTAMENTO -->
+                                    <div class="input-group">
+                                        <div class="rs-select2 js-select-simple">
+                                            <select id="select-backed-zelect" name="depart" id="depart">
+                                                <option disabled="disabled" selected="selected">Departamento</option>
+                                                <option value="Ahuachapán">Ahuachapán</option>
+                                                <option value="Cabañas">Cabañas</option>
+                                                <option value="Chalatenango">Chalatenango</option>
+                                                <option value="Cuscatlán">Cuscatlán</option>
+                                                <option value="La Libertad">La Libertad</option>
+                                                <option value="Morazán">Morazán</option>
+                                                <option value="La Paz">La Paz</option>
+                                                <option value="Santa Ana">Santa Ana</option>
+                                                <option value="San Miguel">San Miguel</option>
+                                                <option value="San Salvador">San Salvador</option>
+                                                <option value="San Vicente">San Vicente</option>
+                                                <option value="Sonsonate">Sonsonate</option>
+                                                <option value="La Union">La Unión</option>
+                                                <option value="Usulután">Usulután</option>
+                                            </select>
+                                            <div class="select-dropdown"></div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="p-t-30">
+                                        <button class="btn btn--radius btn--green" type="submit" name="accion"
+                                            value="Registrarse">Registrarme</button>
+                                    </div>
+
+                                    <br>
+                                    <div class="link">¿Ya estás registrado? <a href="../Vista/loginUsu.php">Inicia
+                                            sesión aquí</a>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+           
+                </div>
+            </div>
+            <!-- // Item -->
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <div class="partners">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-partners owl-carousel">
+
+                       <div class="partner-item">
+                            <img src="assets/images/visa.png" title="1" alt="1">
+                          </div>
+                          
+                          <div class="partner-item">
+                            <img src="assets/images/master.png" title="3" alt="3">
+                          </div>
+                                        <div class="partner-item">
+                            <img src="assets/images/american.png" title="2" alt="2">
+                          </div>
+                          <div class="partner-item">
+                            <img src="assets/images/discover.png" title="4" alt="4">
+                          </div>
+                          
+                          <div class="partner-item">
+                            <img src="assets/images/maestro.png" title="5" alt="5">
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-item">
+            <h4>Negocios financieros</h4>
+            <p>Todos nuestros servicios son respaldados por autoridades legales de la región.</p>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4>Links usables</h4>
+            <ul class="menu-list">
+              <li><a href="#">Creditos</a></li>
+              <li><a href="#">Tarjetas</a></li>
+              <li><a href="#">Servicios</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+                    <h4>Nuestras Redes Sociales</h4>
+       <p>Contactanos a  nuestras redes sociales y consulta lo que desees .</p>
+                    <ul class="social-icons">
+                        <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright &copy; 2023 Banco AgroBinance.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <script language="text/Javascript">
+        cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+        function clearField(t) {                   //declaring the array outside of the
+            if (!cleared[t.id]) {                      // function makes it static and global
+                cleared[t.id] = 1;  // you could use true and false, but that's more typing
+                t.value = '';         // with more chance of typos
+                t.style.color = '#fff';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
